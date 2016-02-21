@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<!--Head contains links to cdn options where available-->
+
+<head>
+    <title>David Milligan's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="David Milligan">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.0.9/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
+    <link rel="icon" type="image/ico" href="/favicon-camera.ico">
+</head>
+
+<!--Bootstrap used for layout, reponsive images and some components eg. modals -->
+
+<body>
+
+    <div class="container">
+        <!--navbar-->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Portfolio</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#about-me">About me<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li><a href="#featured-work">Featured Work<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li><a href="#contact-me">Contact me<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+
+                    <!--Social icons links-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://ie.linkedin.com/in/david-milligan-0007256" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+                        </li>
+                        <li><a href="https://github.com/dmigsy" target="_blank"><i class="fa fa-github fa-lg"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/Mailvan_glide" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <!--header row-->
+        <header class="row" id="header">
+            <div class="col-xs-4" id="logo">
+                <span class="glyphicon glyphicon-camera"></span>
+            </div>
+            <div class="col-xs-8 name-profession">
+                <h1>David Milligan</h1>
+                <h3>Front-End Developer</h3>
+            </div>
+        </header>
+
+        <!--Main image-->
+        <figure id="main-image">
+            <picture>
+                <img srcset="dist/images/work-station-straight-on-view-360.jpg 1x,
+            dist/images/work-station-straight-on-view-868.jpg 2x,
+            dist/images/work-station-straight-on-view-1140.jpg 3x" src="dist/images/work-station-straight-on-view-1140.jpg" alt="My workstation" class="img-responsive">
+            </picture>
+        </figure>
+
+        <!--About me-->
+        <article>
+            <h2 id="about-me">About me</h2>
+            <p>I'm an experienced Product Owner, based in Dublin, who is learning to code. Excited by great UI & UX.</p>
+            <p>And fail videos.</p>
+        </article>
+
+        <!--Featured work full width heading-->
+        <section>
+            <div class="row featured-work">
+                <h2 id="featured-work">Featured Work</h2>
+            </div>
+
+            <!--3 x featured work columns -->
+            <div class="row">
+                <article class="col-md-4 featured-work-col">
+                    <figure>
+                        <picture>
+                            <img srcset="dist/images/macbook-air-360.jpeg 1x,
+                    dist/images/macbook-air-868.jpeg 2x,
+                    dist/images/macbook-air-1140.jpeg 3x" src="dist/images/macbook-air-1140.jpeg" alt="iMac and ipad" class="img-responsive" data-toggle="modal" data-target="#project-0">
+                        </picture>
+                    </figure>
+                    <h4>Project 0</h4>
+
+                    <div class="button-block">
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#project-0"><i class="fa fa-info"></i> Details</button>
+
+                        <a href="https://github.com/dmigsy/dave-is-learning-2-code" role="button" class="btn btn-default" target="_blank"><i class="fa fa-github"></i> View on Github</a>
+                    </div>
+                </article>
+
+                <article class="col-md-4 featured-work-col">
+                    <figure>
+                        <picture>
+                            <img srcset="dist/images/fields-360.jpeg 1x,
+                    dist/images/fields-868.jpeg 2x" src="dist/images/fields-868.jpeg" alt="Aerial view of field" class="img-responsive" data-toggle="modal" data-target="#project-1">
+                        </picture>
+                    </figure>
+                    <h4>Project 1</h4>
+
+                    <div class="button-block">
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#project-1"><i class="fa fa-info"></i> Details</button>
+
+                        <a href="https://github.com/dmigsy/dave-is-learning-2-code" role="button" class="btn btn-default" target="_blank"><i class="fa fa-github"></i> View on Github</a>
+                    </div>
+                </article>
+
+                <article class="col-md-4 featured-work-col">
+                    <figure>
+                        <picture>
+                            <img srcset="dist/images/frog-360.jpeg 1x,
+                    dist/images/frog-868.jpeg 2x" src="dist/images/frog-868.jpeg" alt="Frog in pond" class="img-responsive" data-toggle="modal" data-target="#project-2">
+                        </picture>
+                    </figure>
+                    <h4>Project 2</h4>
+
+                    <div class="button-block">
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#project-2"><i class="fa fa-info"></i> Details</button>
+
+                        <a href="https://github.com/dmigsy/dave-is-learning-2-code" role="button" class="btn btn-default" target="_blank"><i class="fa fa-github"></i> View on Github</a>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+
+        <section id="contact-me" class="row">
+            <h2>Contact me</h2>
+            <form class="horizontal">
+                <div class="form-group">
+                    <label for="name-input">Your name</label>
+                    <input type="text" class="form-control" id="name-input" placeholder="What's your name?">
+                </div>
+                <div class="form-group">
+                    <label for="email-input">Email address</label>
+                    <input type="email" class="form-control" id="email-input" placeholder="Which email address should I contact you at?">
+                </div>
+                <label for="textarea">Message</label>
+                <textarea class="form-control" id="textarea" rows="5" placeholder="Enter your message here"></textarea>
+                <button type="submit" class="btn btn-default email-submit">Submit</button>
+            </form>
+        </section>
+
+
+        <!--modals-->
+
+        <article class="modal fade" tabindex="-1" id="project-0">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title">Project 0</h4>
+                    </div>
+                    <div class="modal-body">
+                        <figure>
+                            <picture>
+                                <img srcset="dist/images/macbook-air-360.jpeg 1x,
+            dist/images/macbook-air-868.jpeg 2x,
+            dist/images/macbook-air-1140.jpeg 3x" src="dist/images/macbook-air-1140.jpeg" alt="iMac and ipad" class="img-responsive">
+                            </picture>
+                        </figure>
+                        <p class="modal-first-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique nisi vel ante venenatis, in vulputate enim viverra. Sed tristique libero ut massa dignissim laoreet. Pellentesque lacinia nunc porta, tincidunt metus id, euismod est. Morbi scelerisque urna sapien, non condimentum nulla sagittis ac. Ut ac diam vel arcu tempus consequat. Mauris ultrices purus quis nibh consequat auctor. Cras vitae magna ut sem eleifend auctor non vitae elit. Sed venenatis lacinia consectetur. Praesent sit amet blandit erat. Donec interdum facilisis odio vitae condimentum. Pellentesque tristique, justo at hendrerit finibus, sem lectus pretium dui, sit amet suscipit lectus lectus at mi.</p>
+
+                        <p>Aliquam vel neque enim. Etiam at eleifend mauris, a dapibus turpis. In orci quam, ultricies vel elit eu, mattis venenatis ante. Proin efficitur urna odio, nec pharetra nisi convallis vitae. Ut sed arcu vel ipsum scelerisque efficitur a quis odio. Morbi iaculis a dolor vitae rhoncus. Phasellus ut luctus sem.</p>
+
+                        <p>Maecenas et arcu id purus pretium ultrices. In gravida mollis lacus, quis porttitor mauris eleifend sed. Quisque dictum nisi id rhoncus ullamcorper. Vivamus ultrices dignissim consequat. Curabitur commodo quis lectus ut elementum. Nunc lectus tellus, pharetra sit amet semper quis, porta semper nisl. Duis gravida purus a nunc euismod, vitae scelerisque augue scelerisque. Aliquam eget pretium augue. Mauris in nulla tincidunt turpis volutpat pellentesque at vel orci.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="modal fade" tabindex="-1" id="project-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title">Project 1</h4>
+                    </div>
+                    <div class="modal-body">
+                        <figure>
+                            <picture>
+                                <img srcset="dist/images/fields-360.jpeg 1x,
+            dist/images/fields-868.jpeg 2x" src="dist/images/fields-868.jpeg" alt="Aerial view of field" class="img-responsive">
+                            </picture>
+                        </figure>
+                        <p class="modal-first-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique nisi vel ante venenatis, in vulputate enim viverra. Sed tristique libero ut massa dignissim laoreet. Pellentesque lacinia nunc porta, tincidunt metus id, euismod est. Morbi scelerisque urna sapien, non condimentum nulla sagittis ac. Ut ac diam vel arcu tempus consequat. Mauris ultrices purus quis nibh consequat auctor. Cras vitae magna ut sem eleifend auctor non vitae elit. Sed venenatis lacinia consectetur. Praesent sit amet blandit erat. Donec interdum facilisis odio vitae condimentum. Pellentesque tristique, justo at hendrerit finibus, sem lectus pretium dui, sit amet suscipit lectus lectus at mi.</p>
+
+                        <p>Aliquam vel neque enim. Etiam at eleifend mauris, a dapibus turpis. In orci quam, ultricies vel elit eu, mattis venenatis ante. Proin efficitur urna odio, nec pharetra nisi convallis vitae. Ut sed arcu vel ipsum scelerisque efficitur a quis odio. Morbi iaculis a dolor vitae rhoncus. Phasellus ut luctus sem.</p>
+
+                        <p>Maecenas et arcu id purus pretium ultrices. In gravida mollis lacus, quis porttitor mauris eleifend sed. Quisque dictum nisi id rhoncus ullamcorper. Vivamus ultrices dignissim consequat. Curabitur commodo quis lectus ut elementum. Nunc lectus tellus, pharetra sit amet semper quis, porta semper nisl. Duis gravida purus a nunc euismod, vitae scelerisque augue scelerisque. Aliquam eget pretium augue. Mauris in nulla tincidunt turpis volutpat pellentesque at vel orci.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+
+        <article class="modal fade" tabindex="-1" id="project-2">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title">Project 2</h4>
+                    </div>
+                    <div class="modal-body">
+                        <figure>
+                            <picture>
+                                <img srcset="dist/images/frog-360.jpeg 1x,
+            dist/images/frog-868.jpeg 2x" src="dist/images/frog-868.jpeg" alt="Frog in pond" class="img-responsive">
+                            </picture>
+                        </figure>
+                        <p class="modal-first-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique nisi vel ante venenatis, in vulputate enim viverra. Sed tristique libero ut massa dignissim laoreet. Pellentesque lacinia nunc porta, tincidunt metus id, euismod est. Morbi scelerisque urna sapien, non condimentum nulla sagittis ac. Ut ac diam vel arcu tempus consequat. Mauris ultrices purus quis nibh consequat auctor. Cras vitae magna ut sem eleifend auctor non vitae elit. Sed venenatis lacinia consectetur. Praesent sit amet blandit erat. Donec interdum facilisis odio vitae condimentum. Pellentesque tristique, justo at hendrerit finibus, sem lectus pretium dui, sit amet suscipit lectus lectus at mi.</p>
+
+                        <p>Aliquam vel neque enim. Etiam at eleifend mauris, a dapibus turpis. In orci quam, ultricies vel elit eu, mattis venenatis ante. Proin efficitur urna odio, nec pharetra nisi convallis vitae. Ut sed arcu vel ipsum scelerisque efficitur a quis odio. Morbi iaculis a dolor vitae rhoncus. Phasellus ut luctus sem.</p>
+
+                        <p>Maecenas et arcu id purus pretium ultrices. In gravida mollis lacus, quis porttitor mauris eleifend sed. Quisque dictum nisi id rhoncus ullamcorper. Vivamus ultrices dignissim consequat. Curabitur commodo quis lectus ut elementum. Nunc lectus tellus, pharetra sit amet semper quis, porta semper nisl. Duis gravida purus a nunc euismod, vitae scelerisque augue scelerisque. Aliquam eget pretium augue. Mauris in nulla tincidunt turpis volutpat pellentesque at vel orci.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <!--Scroll reveal effect https://github.com/jlmakes/scrollreveal.js-->
+
+        <script>
+            window.sr = ScrollReveal();
+            sr.reveal('header', {
+                duration: 1000
+            });
+            sr.reveal('#main-image', {
+                duration: 1000
+            });
+            sr.reveal('.featured-work-col', {
+                duration: 1000
+            });
+            sr.reveal('#contact-me', {
+                duration: 2000
+            });
+        </script>
+
+    </div>
+</body>
+
+</html>

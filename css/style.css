@@ -1,0 +1,142 @@
+/* Header */
+#header {
+    border-bottom: #bbb;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    margin-bottom: 4px;
+}
+
+
+.glyphicon-camera {
+    font-size: 8em;
+}
+
+
+.name-profession {
+    text-align: right;
+}
+
+
+/* Body */
+body {
+    font-family: "Roboto mono", sans-serif;
+
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* Featured Work */
+h2,
+h4 {
+    text-align: center;
+}
+
+
+p {
+    font-size: 1em;
+    text-align: center;
+}
+
+
+.modal-first-paragraph {
+    padding-top: 1em;
+}
+
+
+.button-block {
+    text-align: center;
+}
+
+
+.featured-work-col {
+    margin-bottom: 4em;
+}
+
+
+/* Email form */
+form {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+.email-submit {
+    margin-top: 1em;
+}
+
+#contact-me {
+    margin-bottom: 15em;
+}
+
+
+/* Images */
+img {
+    min-width: 100%;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 770px) {
+
+    ul {
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 2em;
+    }
+
+
+    h3 {
+        font-size: 1.2em
+    }
+
+
+    #logo {
+        font-size: 1em;
+        position: relative;
+        float: left;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
